@@ -1,5 +1,5 @@
 //Name:		BST dictionary
-//Author:	Soran Ghadri
+//Author:	Soran Ghadri [soran.gdr.cs@gmail.com]
 //Date:		December 2015
 
 # include <iostream>
