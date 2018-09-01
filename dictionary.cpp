@@ -35,9 +35,9 @@ public:
 	void display(node*, int);
 	node* search1(string data);
 	node* search2(string syn);
-	void bst::deletion(node *z);
-	void bst::transplant(node* u, node* v);
-	node* bst::successor(node* currentNode);
+	void deletion(node *z);
+	void transplant(node* u, node* v);
+	node* successor(node* currentNode);
 
 };
 
