@@ -15,7 +15,7 @@ public:
     node *leftChild;
     node *rightChild;
 
-    node(){
+    node() {
         data = "0";
         syn = "0";
         parent = NULL;
