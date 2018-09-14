@@ -26,5 +26,6 @@ public:
 };
 
 class bst {
-
+public:
+    node* root;
 };
