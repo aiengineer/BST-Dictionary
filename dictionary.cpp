@@ -30,4 +30,9 @@ public:
     node* root;
 
     bst(){root = NULL;}
+    void insert(string data, string);
 };
+
+void bst::insert(string data, string) {
+
+}
