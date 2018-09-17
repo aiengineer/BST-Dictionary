@@ -52,6 +52,10 @@ void bst::insert(string data, string syn) {
             }
         }
         newNode->parent = backTempNode;
-
+        if(backTempNode->data <= newNode->data){
+            backTempNode->rightChild = newNode;
+        } else{
+            backTempNode->leftChild = newNode;
+        }
     }
 }
