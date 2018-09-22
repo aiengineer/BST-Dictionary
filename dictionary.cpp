@@ -62,5 +62,23 @@ void bst::insert(string data, string syn) {
 }
 
 void bst::display(node *Node, int level) {
-
+    if(root == NULL){
+        cout<< "Dictionary is empty.\n";
+    }
+    else{
+        if (Node->rightChild = NULL){
+            display(Node->rightChild, level+1);
+        }
+        if (Node != root){
+            for(int i=0; i < level; i++){
+                cout<<"     ";
+            }
+        } else{
+            cout<<"Root->";
+        }
+        cout<< Node->data<<": "<< Node->syn<<endl;
+        if (Node->leftChild != NULL){
+            display(Node->leftChild, level+1);
+        }
+    }
 }
