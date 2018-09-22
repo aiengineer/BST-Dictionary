@@ -30,7 +30,8 @@ public:
     node* root;
 
     bst(){root = NULL;}
-    void insert(string data, string syn);
+    void insert(string data, string);
+    void display(node*, int);
 };
 
 void bst::insert(string data, string syn) {
@@ -58,4 +59,8 @@ void bst::insert(string data, string syn) {
             backTempNode->leftChild = newNode;
         }
     }
+}
+
+void bst::display(node *Node, int level) {
+
 }
