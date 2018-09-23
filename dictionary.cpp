@@ -85,5 +85,7 @@ void bst::display(node *Node, int level) {
 }
 
 node* bst::search1(string data) {
+    node* tempNode = new node();
+    tempNode = root;
 
 }
