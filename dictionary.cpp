@@ -32,6 +32,7 @@ public:
     bst(){root = NULL;}
     void insert(string data, string);
     void display(node*, int);
+    node* search1(string data);
 };
 
 void bst::insert(string data, string syn) {
@@ -81,4 +82,8 @@ void bst::display(node *Node, int level) {
             display(Node->leftChild, level+1);
         }
     }
+}
+
+node* bst::search1(string data) {
+
 }
