@@ -87,5 +87,15 @@ void bst::display(node *Node, int level) {
 node* bst::search1(string data) {
     node* tempNode = new node();
     tempNode = root;
-
+    while (tempNode != NULL){
+        if (tempNode->data == data){
+            return tempNode;
+        } else {
+            if (tempNode->data <= data) {
+                tempNode = tempNode->rightChild;
+            } else {
+                tempNode = tempNode->leftChild;
+            }
+        }
+    }
 }
