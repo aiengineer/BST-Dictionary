@@ -98,4 +98,5 @@ node* bst::search1(string data) {
             }
         }
     }
+    return NULL;
 }
