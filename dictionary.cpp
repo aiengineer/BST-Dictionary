@@ -102,7 +102,18 @@ node* bst::search1(string data) {
     return NULL;
 }
 
-node* bst::search2(string data) {
+node* bst::search2(string syn) {
     node* tempNode = new node();
     tempNode = root;
+    while (tempNode != NULL) {
+        if (tempNode->syn == syn) {
+            return tempNode;
+        } else {
+            if (tempNode->syn <= syn) {
+                tempNode = tempNode->rightChild;
+            } else {
+                tempNode = tempNode->leftChild;
+            }
+        }
+    }
 }
