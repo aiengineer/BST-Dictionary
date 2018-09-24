@@ -103,5 +103,6 @@ node* bst::search1(string data) {
 }
 
 node* bst::search2(string data) {
-
+    node* tempNode = new node();
+    tempNode = root;
 }
