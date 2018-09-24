@@ -22,7 +22,6 @@ public:
         leftChild = NULL;
         rightChild = NULL;
     }
-
 };
 
 class bst {
