@@ -116,4 +116,5 @@ node* bst::search2(string syn) {
             }
         }
     }
+    return NULL;
 }
