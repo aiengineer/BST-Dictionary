@@ -33,6 +33,7 @@ public:
     void insert(string data, string);
     void display(node*, int);
     node* search1(string data);
+    node* search2(string data);
 };
 
 void bst::insert(string data, string syn) {
@@ -99,4 +100,8 @@ node* bst::search1(string data) {
         }
     }
     return NULL;
+}
+
+node* bst::search2(string data) {
+
 }
