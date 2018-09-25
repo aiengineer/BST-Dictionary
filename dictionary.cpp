@@ -39,6 +39,8 @@ public:
     node *search2(string data);
 
     node *successor(node *currentNode);
+
+    void transplant(node *u, node *v);
 };
 
 void bst::insert(string data, string syn) {
@@ -144,4 +146,8 @@ node *bst::successor(node *currentNode) {
         }
         return tempNode;
     }
+}
+
+viod bst::transplant(node *u, node *v) {
+
 }
