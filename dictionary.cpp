@@ -149,5 +149,13 @@ node *bst::successor(node *currentNode) {
 }
 
 viod bst::transplant(node *u, node *v) {
-
+    if (u->parent == NULL) {
+        root = v;
+    } else {
+        if (u == u->parent->leftChild) {
+            u->parent->leftChild = v;
+        } else {
+            u->parent->rightChild = v;
+        }
+    }
 }
