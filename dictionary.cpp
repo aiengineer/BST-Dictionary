@@ -127,4 +127,15 @@ node *bst::successor(node *currentNode) {
     node *tempNode = new node();
     node *backTempNode = new node();
     tempNode = currentNode;
+
+    if (tempNode->rightChild != NULL) {
+        tempNode = tempNode->rightChild;
+        while (tempNode != NULL) {
+            backTempNode = tempNode;
+            tempNode = tempNode->leftChild;
+        }
+        return backTempNode;
+    } else {
+        
+    }
 }
