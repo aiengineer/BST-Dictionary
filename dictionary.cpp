@@ -124,5 +124,7 @@ node *bst::search2(string syn) {
 }
 
 node *bst::successor(node *currentNode) {
-
+    node *tempNode = new node();
+    node *backTempNode = new node();
+    tempNode = currentNode;
 }
