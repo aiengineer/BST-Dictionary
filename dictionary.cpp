@@ -37,6 +37,8 @@ public:
     node *search1(string data);
 
     node *search2(string data);
+
+    node *successor(node *currentNode);
 };
 
 void bst::insert(string data, string syn) {
@@ -121,3 +123,6 @@ node *bst::search2(string syn) {
     return NULL;
 }
 
+node *bst::successor(node *currentNode) {
+
+}
