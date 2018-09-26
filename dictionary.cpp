@@ -41,6 +41,8 @@ public:
     node *successor(node *currentNode);
 
     void transplant(node *u, node *v);
+
+    void deletion(node *z);
 };
 
 void bst::insert(string data, string syn) {
@@ -161,4 +163,8 @@ void bst::transplant(node *u, node *v) {
     if (v != NULL) {
         v->parent = u->parent;
     }
+}
+
+void bst::deletion(node *z) {
+
 }
