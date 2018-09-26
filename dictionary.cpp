@@ -176,9 +176,13 @@ void bst::deletion(node *z) {
             succesor = successor(z);
             if (succesor->parent != z) {
                 transplant(succesor, succesor->rightChild);
-
+                succesor->rightChild = z->rightChild;
+                succesor->rightChild->parent = succesor;
             }
-
+            transplant(z, succesor);
+            succesor->leftChild = z->leftChild;
+            succesor->leftChild->parent = succesor;
         }
     }
 }
+
