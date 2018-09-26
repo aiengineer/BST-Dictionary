@@ -166,5 +166,19 @@ void bst::transplant(node *u, node *v) {
 }
 
 void bst::deletion(node *z) {
+    if (z->leftChild == NULL) {
+        transplant(z, z->rightChild);
+    } else {
+        if (z->rightChild != NULL) {
+            transplant(z, z->leftChild);
+        } else {
+            node *succesor = new node();
+            succesor = successor(z);
+            if (succesor->parent != z) {
+                transplant(succesor, succesor->rightChild);
 
+            }
+
+        }
+    }
 }
