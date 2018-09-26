@@ -158,4 +158,7 @@ viod bst::transplant(node *u, node *v) {
             u->parent->rightChild = v;
         }
     }
+    if (v != NULL) {
+        v->parent = u->parent;
+    }
 }
