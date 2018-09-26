@@ -148,7 +148,7 @@ node *bst::successor(node *currentNode) {
     }
 }
 
-viod bst::transplant(node *u, node *v) {
+void bst::transplant(node *u, node *v) {
     if (u->parent == NULL) {
         root = v;
     } else {
