@@ -184,5 +184,6 @@ void bst::deletion(node *z) {
             succesor->leftChild->parent = succesor;
         }
     }
+    delete z;
 }
 
