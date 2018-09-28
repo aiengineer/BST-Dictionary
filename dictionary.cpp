@@ -203,5 +203,9 @@ void menu(){
         cout << "4. Persion Search" << endl;
         cout << "5. Delete" << endl;
         cout << endl << "Enter your selection:" << endl;
+
+        cin >> select;
+        system("CLS");
+
     }
 }
