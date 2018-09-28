@@ -188,5 +188,10 @@ void bst::deletion(node *z) {
 }
 
 void menu(){
-
+    char ch;
+    string int_temp;
+    string p;
+    node *temp = new node();
+    bst my_tree;
+    int select;
 }
