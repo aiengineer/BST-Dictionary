@@ -206,6 +206,10 @@ void menu(){
 
         cin >> select;
         system("CLS");
+        switch (select) {
+            case 0:
+                break;
 
-    }
+        }
+    } while ();
 }
