@@ -187,3 +187,6 @@ void bst::deletion(node *z) {
     delete z;
 }
 
+void menu(){
+
+}
