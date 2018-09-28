@@ -194,4 +194,14 @@ void menu(){
     node *temp = new node();
     bst my_tree;
     int select;
+    do {
+        system("CLS");
+        cout << "0. Exit" << endl;
+        cout << "1. Insert" << endl;
+        cout << "2. Display" << endl;
+        cout << "3. English Search" << endl;
+        cout << "4. Persion Search" << endl;
+        cout << "5. Delete" << endl;
+        cout << endl << "Enter your selection:" << endl;
+    }
 }
