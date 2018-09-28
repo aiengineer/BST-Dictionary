@@ -209,7 +209,16 @@ void menu(){
         switch (select) {
             case 0:
                 break;
-
+            case 1:
+                do {
+                    string data;
+                    string syn;
+                    cout << "Enter the word (English,Pesion meaning): ";
+                    cin >> data >> syn;
+                    my_tree.insert(data, syn);
+                    cout << endl << "Do you want another word? [y or n]" << endl;
+                    cin >> ch;
+                } while (ch != 'n');
         }
     } while ();
 }
