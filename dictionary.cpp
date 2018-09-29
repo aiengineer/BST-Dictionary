@@ -209,7 +209,7 @@ void menu(){
         switch (select) {
             case 0:
                 break;
-            case 1:
+            case 1: {
                 do {
                     string data;
                     string syn;
@@ -219,6 +219,15 @@ void menu(){
                     cout << endl << "Do you want another word? [y or n]" << endl;
                     cin >> ch;
                 } while (ch != 'n');
+                break;
+            }
+            case 2: {
+                my_tree.display(my_tree.root, 0);
+                cout << endl << "Press 0 to continue!" << endl;
+                cin >> ch;
+                break;
+            }
+
         }
     } while ();
 }
