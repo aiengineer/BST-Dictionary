@@ -256,6 +256,9 @@ void menu(){
                 {
                     cout << "It isn't in Dictionary!" << endl;
                 }
+                cout << endl << "Press 0 to continue!" << endl;
+                cin >> ch;
+                break;
             }
         }
     } while ();
