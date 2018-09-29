@@ -227,7 +227,23 @@ void menu(){
                 cin >> ch;
                 break;
             }
+            case 3: {
+                cout << "Enter English word:";
+                cin >> int_temp;
+                temp = my_tree.search1(int_temp);
+                if (temp != NULL)
+                {
+                    cout << temp->data << ": " << temp->syn << endl;
+                }
+                else
+                {
+                    cout << "It isn't in Dictionary!" << endl;
+                }
 
+                cout << endl << "Press 0 to continue!" << endl;
+                cin >> ch;
+                break;
+            }
         }
     } while ();
 }
