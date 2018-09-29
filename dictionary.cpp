@@ -244,6 +244,19 @@ void menu(){
                 cin >> ch;
                 break;
             }
+            case 4: {
+                cout << "Enter Persion word:";
+                cin >> p;
+                temp = myTree.search2(p);
+                if (temp != NULL)
+                {
+                    cout << temp->syn << ": " << temp->data << endl;
+                }
+                else
+                {
+                    cout << "It isn't in Dictionary!" << endl;
+                }
+            }
         }
     } while ();
 }
