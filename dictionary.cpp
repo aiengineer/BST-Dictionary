@@ -262,16 +262,16 @@ void menu(){
             }
             case 5: {
                 cout << "Enter the word that you want delete: ";
-                cin >> inttemp;
-                temp = myTree.search1(inttemp);
+                cin >> int_temp;
+                temp = my_tree.search1(int_temp);
                 if (temp == NULL)
                 {
-                    cout << inttemp << " isn't in Dictionary" << endl;
+                    cout << int_temp << " isn't in Dictionary" << endl;
                 }
                 else
                 {
-                    myTree.deletion(temp);
-                    cout << inttemp << " removed from Dictionary." << endl;
+                    my_tree.deletion(temp);
+                    cout << int_temp << " removed from Dictionary." << endl;
                 }
             }
         }
