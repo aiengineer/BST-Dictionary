@@ -260,6 +260,20 @@ void menu(){
                 cin >> ch;
                 break;
             }
+            case 5: {
+                cout << "Enter the word that you want delete: ";
+                cin >> inttemp;
+                temp = myTree.search1(inttemp);
+                if (temp == NULL)
+                {
+                    cout << inttemp << " isn't in Dictionary" << endl;
+                }
+                else
+                {
+                    myTree.deletion(temp);
+                    cout << inttemp << " removed from Dictionary." << endl;
+                }
+            }
         }
     } while ();
 }
