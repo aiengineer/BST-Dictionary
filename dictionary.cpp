@@ -277,6 +277,8 @@ void menu(){
                 cin >> ch;
                 break;
             }
+            default:
+                break;
 
         }
     } while ();
