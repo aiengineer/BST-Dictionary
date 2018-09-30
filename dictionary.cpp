@@ -281,5 +281,5 @@ void menu(){
                 break;
 
         }
-    } while ();
+    } while (select != 0);
 }
