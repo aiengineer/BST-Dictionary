@@ -273,7 +273,11 @@ void menu(){
                     my_tree.deletion(temp);
                     cout << int_temp << " removed from Dictionary." << endl;
                 }
+                cout << endl << "Press 0 to continue!" << endl;
+                cin >> ch;
+                break;
             }
+
         }
     } while ();
 }
