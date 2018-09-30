@@ -187,7 +187,7 @@ void bst::deletion(node *z) {
     delete z;
 }
 
-void menu(){
+void menu() {
     char ch;
     string int_temp;
     string p;
@@ -231,12 +231,9 @@ void menu(){
                 cout << "Enter English word:";
                 cin >> int_temp;
                 temp = my_tree.search1(int_temp);
-                if (temp != NULL)
-                {
+                if (temp != NULL) {
                     cout << temp->data << ": " << temp->syn << endl;
-                }
-                else
-                {
+                } else {
                     cout << "It isn't in Dictionary!" << endl;
                 }
 
@@ -248,12 +245,9 @@ void menu(){
                 cout << "Enter Persion word:";
                 cin >> p;
                 temp = myTree.search2(p);
-                if (temp != NULL)
-                {
+                if (temp != NULL) {
                     cout << temp->syn << ": " << temp->data << endl;
-                }
-                else
-                {
+                } else {
                     cout << "It isn't in Dictionary!" << endl;
                 }
                 cout << endl << "Press 0 to continue!" << endl;
@@ -264,12 +258,9 @@ void menu(){
                 cout << "Enter the word that you want delete: ";
                 cin >> int_temp;
                 temp = my_tree.search1(int_temp);
-                if (temp == NULL)
-                {
+                if (temp == NULL) {
                     cout << int_temp << " isn't in Dictionary" << endl;
-                }
-                else
-                {
+                } else {
                     my_tree.deletion(temp);
                     cout << int_temp << " removed from Dictionary." << endl;
                 }
@@ -284,7 +275,7 @@ void menu(){
     } while (select != 0);
 }
 
-int main(){
+int main() {
     menu();
     return 0;
 }
