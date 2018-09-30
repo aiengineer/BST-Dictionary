@@ -283,3 +283,8 @@ void menu(){
         }
     } while (select != 0);
 }
+
+int main(){
+    menu();
+    return 0;
+}
